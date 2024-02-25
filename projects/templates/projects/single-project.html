@@ -3,11 +3,18 @@
 {% block content %}
 <h1>{{project.title}}</h1>
 <hr>
+<<<<<<< HEAD
 {% for tag in tags %}
     <span style="border:1px solid grey">{{ tag }}</span>
 {% endfor %}
 
 
+=======
+{% for tag in project.tags.all %}
+    <span style="border:1px solid gray">{{tag}}</span>
+{% endfor %}
+<hr>
+>>>>>>> 3703a2740cee4613db21fcb4019b64394c29f9ff
 <br>
 
 
